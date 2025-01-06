@@ -13,4 +13,8 @@ Take a look at my progress, you'll find the <mark>_roadmap rubric_ </mark> at <a
         <th>Single-page-cv</th>
         <th><a href="https://jtoledom1.github.io/Roadmap-projects/Single-Page-CV/">Click here!</a></th>
     </tr>
+    <tr>
+        <th>Basic-HTML-website</th>
+        <th><a href="https://jtoledom1.github.io/Roadmap-projects/Basic-HTML-Website/index.html">Click here!</a></th>
+    </tr>
 </table>
