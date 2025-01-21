@@ -79,7 +79,7 @@ html{
     gap: 10px;
     grid-template: 
     "A1" 90px
-    "A2" 40px
+    "A2" 60px
     "A3" Auto
     "A4" 25px;
     .header{
@@ -95,11 +95,117 @@ html{
         grid-area: A4;
     }
 }
-.welcome h1, .welcome p{
+.main-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "B1" 1fr
+    "B2" 1fr;
+    .personaldescription{
+        grid-area: B1;
+    }
+    #teachersreviews{
+        grid-area: B2;
+    }
+}
+.personaldescription{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "C1 C2 C3" 1fr
+    "C1 C4 C3" 1fr;
+    .projects{
+        grid-area: C1;
+    }
+    .workexperience{
+        grid-area: C2;
+    }
+    .education{
+
+        grid-area: C3;
+    }
+    .opensourcework{
+        grid-area: C4;
+    }
+}
+.personaldescription>*{
+    margin: 10px;
+}
+.personaldescription ul,.personaldescription li{
+    list-style:none;
+    margin-top: 15px;
+}
+.workexperience>*,.opensourcework >*,.projects>*,.education>*{
+    margin-top: 15px;
+}
+.welcome>*{
     display: flex;
     justify-content:center;
 }
+#teachersreviews{
+    display: grid;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    gap:10px;
+    grid-template: 
+    "D1 D1 D1" 0.3fr
+    "D2 D3 D4" 0.5fr /
+    1fr 1fr 1fr;
+    .titleTR{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        grid-area: D1;
+    }
+    .teacher1{
+        padding: 10px;
+        border-radius: 20px;
+        border-style: solid;
+        grid-area: D2;
+    }
+    .teacher2{
+        padding: 10px;
+        
+        border-radius: 20px;
+        border-style: solid;
+        grid-area: D3;
+    }
+    .teacher3{
+        padding: 10px;
+        border-radius: 20px;
+        border-style: solid;
+        grid-area: D4;
+    }
+}
+.titleTR H2{
+    text-align: center;
+}
 @media (max-width: 768px) {
+    #teachersreviews{
+        grid-template: 
+        "D1 D1" 0.3fr
+        "D2 D3" auto
+        "D4 D4" 0.5fr /
+        1fr 1fr;
+    }
+    .personaldescription{
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "C1 C2" 1fr 
+        "C3 C4" 1fr;
+    }
+    .Initial-container{
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "A1" 132px
+        "A2" 60px
+        "A3" Auto
+        "A4" 25px;
+    }
     .header {
         flex-direction: column;
         padding: 20px 30px;
