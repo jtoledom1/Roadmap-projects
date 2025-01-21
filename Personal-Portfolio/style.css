@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.2 rem;
+    min-height: 100%;
+}
+html{
+    height: 100%;
+}
+h1,h2,h3{
+    font-family: "Comic Neue", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* GRID */
+.Initial-container{
+    display: grid;
+        grid-template: 
+        "A1 A1" 50px
+        "Wl Wl" 100px
+        "A2 A2" auto
+        "A3 A3" 20px;
+        .header-container{
+            grid-area: A1;
+            background-color: rgb(182, 220, 254);
+            overflow: hidden;
+        }
+        .main-container{
+            grid-area: A2;
+            overflow: hidden;
+        }
+        
+        .welcome{
+            display: grid;
+            background-color: rgb(208, 231, 251);
+            grid-area: Wl;
+            overflow: hidden;
+        }
+        .footer-container{
+            grid-area:A3;
+            color: white;
+            background-color: blue;
+}
+}
+.main-container{
+    display: grid;
+    grid-template: 
+        "MC1" Auto
+        "MC2" 200px;
+        .personaldescription{
+            grid-area: MC1;
+        }
+        #teachersreviews{
+            grid-area: MC2;
+        }
+    }
+.personaldescription{
+    display: grid;
+    grid-template: 
+        "projects workexperience education" 1fr
+        "projects opensourcework education" 1fr /
+        1fr     2fr           1fr;
+        .projects{
+            grid-area: projects;
+        }
+        #workexperience{
+            grid-area: workexperience;
+        }
+        .opensourcework{
+            grid-area: opensourcework;
+        }
+        .education{
+            grid-area: education;
+        }
+}
+/* NAVBAR */
+
+.titlenavbar,.namlog,.logo,.navbar,.optnvb, .navbar ul{
+    display: inline-block;
+    line-height: 50px;
+}
+.header-container nav ul li{
+    margin-right: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar{
+    font-size: 1.2rem;
+    margin-right: 10px;
+    float:right;
+}
+.logo{
+    width: 1.5rem;
+    vertical-align: middle;
+}
+.titlenavbar{
+    font-size: 1.2rem;
+    width: 60%;
+    text-align: center;
+}
+.namlog{
+    width:20vw;
+}
+
+.welcome{
+/*     display: inline-block;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; */
+    /* place-items: center; */
+    align-items: center;
+} 
+.education>*,.projects ul li, .projects,#workexperience,#workexperience>*,.opensourcework>*{
+    padding-top: 1rem;
+}
