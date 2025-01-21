@@ -19,4 +19,9 @@ Take a look at my progress, you'll find the <mark>_roadmap rubric_ </mark> at <a
         <th><a href="https://jtoledom1.github.io/Roadmap-projects/Basic-HTML-Website/index.html">Click here!</a></th>
         <th><a href="https://roadmap.sh/projects/basic-html-website">Click here!</a></th>
     </tr>
+    <tr>
+        <th>Personal Portfolio</th>
+        <th><a href="https://jtoledom1.github.io/Roadmap-projects/Personal-Portfolio/index.html">Click here!</a></th>
+        <th><a href="https://roadmap.sh/projects/portfolio-website">Click here!</a></th>
+    </tr>
 </table>
